@@ -18,6 +18,7 @@ public class Main {
 
     }
     public static void main(String[] args) throws Exception {
+        validateArgs(args);
         int port = Integer.parseInt(args[0]);
         int nThreads = Integer.parseInt(args[1]);
         if (args[2].equals("server")){
