@@ -84,7 +84,6 @@ public class Server
                 httpExchange.sendResponseHeaders(responseCode, response.getBytes().length);
                 try(OutputStream os = httpExchange.getResponseBody()){
                     os.write(response.getBytes());
-                    os.close();
                 }
             }
         }
