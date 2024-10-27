@@ -1,6 +1,5 @@
 package com.verve.challenge;
 
-import java.io.IOException;
 import java.util.logging.Logger;
 
 public class Main {
@@ -11,7 +10,7 @@ public class Main {
             logger.severe("Usage: java jarfile.jar port_number number_of_threads server|stress_generator");
             System.exit(-1);
         }
-        if (args[2].equals("server") || args[2].equals("stress_generator")){
+        if (!(args[2].equals("server") || args[2].equals("stress_generator"))){
             logger.severe("argument 3 must be server|stress_generator");
             System.exit(-1);
         }
