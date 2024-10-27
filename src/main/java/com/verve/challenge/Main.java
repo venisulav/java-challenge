@@ -8,7 +8,7 @@ public class Main {
     private static void validateArgs(String[] args){
         if (args.length != 3){
             logger.severe("Please provide the required arguments.");
-            logger.severe("Usage: java port_number number_of_threads server|stress_generator");
+            logger.severe("Usage: java jarfile.jar port_number number_of_threads server|stress_generator");
             System.exit(-1);
         }
         if (args[2].equals("server") || args[2].equals("stress_generator")){
